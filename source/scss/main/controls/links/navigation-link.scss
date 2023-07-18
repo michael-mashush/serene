@@ -1,0 +1,42 @@
+.navigation-link {
+    position: relative;
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    line-height: 1.2;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(var(--color-02));
+
+    @media screen and (max-width: 1530px) {
+    	font-size: calc(10px + 4 * (100vw - 320px) / (1530 - 320));
+    }
+
+    @media screen and (max-width: 1024px) {
+    	font-size: calc(14px + 6 * (100vw - 320px) / (1024 - 320));
+
+    	.navigation & {
+    		visibility: hidden;
+    	}
+
+    	.navigation--active & {
+    		visibility: visible;
+    	}
+    }
+
+    &::after {
+    	position: absolute;
+    	right: 100%;
+    	bottom: -0.2rem;
+    	left: 0;
+    	height: 1px;
+    	background-color: rgba(var(--color-02));
+    	transition: right 0.2s;
+    	content: '';
+    }
+
+    &:focus-visible::after, &:hover::after, &--active::after {
+    	right: 0.5rem;
+    }
+}

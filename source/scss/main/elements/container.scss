@@ -1,0 +1,12 @@
+.container {
+    margin: 0 auto;
+    padding: 0 var(--container-padding-value);
+
+    &--default {
+    	max-width: var(--default-container-width);
+    }
+
+    &--greater {
+    	max-width: var(--greater-container-width);
+    }
+}

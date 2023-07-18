@@ -1,0 +1,31 @@
+.property-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    counter-reset: number;
+
+    &__item {
+    	&:not(:last-child) {
+    		margin-bottom: 35px;
+
+    		@media screen and (max-width: 1530px) {
+    			margin-bottom: calc(15px + 20 * (100vw - 320px) / (1530 - 320));
+    		}
+    	}
+
+    	&::before {
+    		text-transform: uppercase;
+    		letter-spacing: -0.05em;
+    		font-family: 'Inter';
+    		font-weight: 600;
+    		font-size: 16px;
+    		color: rgba(var(--color-05));
+    		content: counter(number, decimal-leading-zero) '';
+    		counter-increment: number;
+
+    		@media screen and (max-width: 1530px) {
+    			font-size: calc(12px + 4 * (100vw - 320px) / (1530 - 320));
+    		}
+    	}
+    }
+}

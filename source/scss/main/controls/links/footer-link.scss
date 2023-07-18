@@ -1,0 +1,10 @@
+.footer-link {
+    text-decoration: underline !important;
+    font-weight: 700;
+    color: rgba(var(--color-05));
+    transition: all 0.2s;
+
+    &:focus-visible, &:hover {
+    	color: rgba(var(--color-02));
+    }
+}

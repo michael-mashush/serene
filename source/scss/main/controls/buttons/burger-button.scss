@@ -1,0 +1,42 @@
+.burger-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+
+    &::before {
+    	position: absolute;
+    	top: 50%;
+    	right: calc(100% + 2px);
+    	left: -2px;
+    	height: 1px;
+    	background-color: rgba(var(--color-01));
+    	transition: all 0.2s;
+    	transform: translateY(-100%);
+    	content: '';
+    }
+
+    &--active::before {
+    	right: -2px;
+    }
+
+    &__text {
+    	display: flex;
+    	align-items: center;
+    	text-transform: uppercase;
+    	letter-spacing: 0.55em;
+    	line-height: 1.2;
+    	font-weight: 600;
+    	font-size: 14px;
+    	color: rgba(var(--color-02));
+
+    	&::after {
+    		letter-spacing: 0;
+    		content: 'u';
+    	}
+
+    	@media screen and (max-width: 1530px) {
+    		font-size: calc(12px + 2 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+}

@@ -1,0 +1,23 @@
+.contacts-subscribe {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+    	margin-bottom: 30px;
+    	max-width: 290px;
+
+    	@media screen and (max-width: 1530px) {
+    		margin-bottom: calc(15px + 15 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+
+    &__form {
+    	@media screen and (max-width: 768px) {
+    		max-width: 350px;
+    	}
+
+    	@media screen and (max-width: 425px) {
+    		max-width: 100%;
+    	}
+    }
+}

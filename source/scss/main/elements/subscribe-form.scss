@@ -1,0 +1,9 @@
+.subscribe-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    &__element {
+    	display: flex;
+    	border-bottom: 1px solid rgba(var(--color-03));
+    }
+}

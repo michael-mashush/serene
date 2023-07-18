@@ -1,0 +1,111 @@
+/*
+    [==================================================]
+        Initial styles
+    [==================================================]
+*/
+
+@import './init/reset.scss';
+
+@import './init/fonts.scss';
+
+@import './init/const.scss';
+
+/*
+    [==================================================]
+        Libraries
+    [==================================================]
+*/
+
+@import './libs/aos.scss';
+
+/*
+    [==================================================]
+        Typography
+    [==================================================]
+*/
+
+@import './main/typography/heading.scss';
+
+@import './main/typography/paragraph.scss';
+
+/*
+    [==================================================]
+        Sections
+    [==================================================]
+*/
+
+@import './main/sections/default-section.scss';
+
+@import './main/sections/header-section.scss';
+
+@import './main/sections/intro-section.scss';
+
+@import './main/sections/properties-section.scss';
+
+@import './main/sections/beauty-products-section.scss';
+
+@import './main/sections/popular-now-section.scss';
+
+@import './main/sections/contacts-section.scss';
+
+@import './main/sections/footer-section.scss';
+
+/*
+    [==================================================]
+        Elemenets
+    [==================================================]
+*/
+
+@import './main/elements/wrapper.scss';
+
+@import './main/elements/container.scss';
+
+@import './main/elements/image.scss';
+
+@import './main/elements/section-header.scss';
+
+@import './main/elements/section-content.scss';
+
+@import './main/elements/border-around-image.scss';
+
+@import './main/elements/contacts-info.scss';
+
+@import './main/elements/contacts-subscribe.scss';
+
+@import './main/elements/subscribe-form.scss';
+
+@import './main/elements/navigation.scss';
+
+@import './main/elements/intro-images.scss';
+
+@import './main/elements/property-list.scss';
+
+@import './main/elements/product-list.scss';
+
+@import './main/elements/product-card.scss';
+
+/*
+    [==================================================]
+        Controls
+    [==================================================]
+*/
+
+@import './main/controls/buttons/default-button.scss';
+
+@import './main/controls/buttons/burger-button.scss';
+
+@import './main/controls/buttons/cart-button.scss';
+
+@import './main/controls/buttons/form-button.scss';
+
+@import './main/controls/inputs/form-input.scss';
+
+@import './main/controls/links/navigation-link.scss';
+
+@import './main/controls/links/contact-link.scss';
+
+@import './main/controls/links/logotype-link.scss';
+
+@import './main/controls/links/footer-link.scss';
+
+@import './main/controls/links/large-link.scss';

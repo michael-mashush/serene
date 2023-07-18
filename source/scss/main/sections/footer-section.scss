@@ -1,0 +1,23 @@
+.footer-section {
+    padding: 30px 0;
+
+    &__inner {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+
+    	@media screen and (max-width: 600px) {
+    		flex-direction: column;
+    	}
+    }
+
+    &__text {
+    	text-align: center;
+
+    	&:not(:last-child) {
+    		@media screen and (max-width: 600px) {
+    			margin-bottom: 5px;
+    		}
+    	}
+    }
+}

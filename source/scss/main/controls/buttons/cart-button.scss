@@ -1,0 +1,24 @@
+.cart-button {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 0.55em;
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(var(--color-02));
+
+    @media screen and (max-width: 1530px) {
+    	font-size: calc(12px + 2 * (100vw - 320px) / (1530 - 320));
+    }
+
+    &__value {
+    	&::before {
+    		content: '(';
+    	}
+
+    	&::after {
+    		letter-spacing: 0;
+    		content: ')';
+    	}
+    }
+}

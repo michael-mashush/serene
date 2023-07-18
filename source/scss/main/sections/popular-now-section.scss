@@ -1,0 +1,43 @@
+.popular-now-section {
+    padding-top: 210px;
+    padding-bottom: 200px;
+
+    @media screen and (max-width: 1530px) {
+    	padding-top: calc(100px + 110 * (100vw - 320px) / (1530 - 320));
+    	padding-bottom: calc(100px + 100 * (100vw - 320px) / (1530 - 320));
+    }
+
+    &__inner {
+    	display: flex;
+    	flex-direction: column;
+    }
+
+    &__content {
+    	display: flex;
+    	justify-content: space-between;
+    	margin-bottom: 200px;
+
+    	@media screen and (max-width: 1530px) {
+    		margin-bottom: calc(100px + 100 * (100vw - 320px) / (1530 - 320));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		justify-content: flex-start;
+    		flex-direction: column;
+    		max-width: 600px;
+    	}
+    }
+
+    &__section-content {
+    	margin-left: 150px;
+
+    	@media screen and (max-width: 1530px) {
+    		margin-left: calc(30px + 120 * (100vw - 1024px) / (1530 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		margin-top: calc(25px + 10 * (100vw - 320px) / (1530 - 320));
+    		margin-left: 0;
+    	}
+    }
+}

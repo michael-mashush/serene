@@ -1,0 +1,30 @@
+.form-input {
+    display: block;
+    padding: 15px 5px;
+    width: 100%;
+    background-color: transparent;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(var(--color-02));
+
+    @media screen and (max-width: 1530px) {
+    	font-size: calc(12px + 3 * (100vw - 320px) / (1530 - 320));
+    }
+
+    @media screen and (max-width: 1530px) {
+    	padding-top: calc(12px + 3 * (100vw - 320px) / (1530 - 320));
+    	padding-bottom: calc(12px + 3 * (100vw - 320px) / (1530 - 320));
+    }
+
+    &:focus-visible::placeholder, &:hover::placeholder {
+    	color: rgba(var(--color-02));
+    }
+
+    &::placeholder {
+    	text-transform: capitalize;
+    	color: rgba(var(--color-05));
+    	transition: all 0.2s;
+    }
+}

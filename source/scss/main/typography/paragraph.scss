@@ -1,0 +1,44 @@
+.paragraph {
+    &--important {
+    	color: rgba(var(--color-09));
+    }
+
+    &--variant-01 {
+    	line-height: 1.5;
+    	font-family: 'Inter';
+    	font-weight: 400;
+    	font-size: 28px;
+    	color: rgba(var(--color-04));
+
+    	@media screen and (max-width: 1530px) {
+    		font-size: calc(16px + 12 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+
+    &--variant-02 {
+    	text-transform: uppercase;
+    	letter-spacing: 0.5em;
+    	line-height: 1.2;
+    	font-family: 'Inter';
+    	font-weight: 600;
+    	font-size: 14px;
+    	color: rgba(var(--color-02));
+
+    	@media screen and (max-width: 1530px) {
+    		font-size: calc(10px + 4 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+
+    &--variant-03 {
+    	line-height: 1.5;
+    	font-family: 'Droid Serif';
+    	font-weight: 400;
+    	font-style: normal;
+    	font-size: 17px;
+    	color: rgba(var(--color-05));
+
+    	@media screen and (max-width: 1530px) {
+    		font-size: calc(13px + 4 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+}

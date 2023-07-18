@@ -1,0 +1,22 @@
+.default-section {
+    position: relative;
+
+    &::after {
+    	position: absolute;
+    	bottom: 0;
+    	left: 50%;
+    	display: block;
+    	height: 1px;
+    	width: calc(var(--large-container-width) - 40px);
+    	background-color: rgba(var(--color-02));
+    	transform: translateX(-50%);
+    	content: '';
+
+    	@media screen and (max-width: 1710px) {
+    		right: 20px;
+    		left: 20px;
+    		width: auto;
+    		transform: none;
+    	}
+    }
+}

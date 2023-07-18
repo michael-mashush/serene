@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    outline-offset: 5px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1.0;
+    font-family: 'Inter';
+    font-size: 100%;
+
+    @supports (scroll-behavior: smooth) {
+    	scroll-behavior: smooth;
+    }
+}
+
+section, header, footer, aside, main, nav {
+    display: block;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+    text-decoration: none;
+}
+
+input, textarea, button, select {
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+button {
+    display: inline-block;
+    background: none;
+    background-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}

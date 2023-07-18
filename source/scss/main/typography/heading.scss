@@ -1,0 +1,29 @@
+.heading {
+    text-transform: uppercase;
+    color: rgba(var(--color-02));
+
+    &--important {
+    	color: rgba(var(--color-09));
+    }
+
+    &--variant-01 {
+    	line-height: 1.5;
+    	font-weight: 600;
+    	font-size: 64px;
+
+    	@media screen and (max-width: 1530px) {
+    		font-size: calc(28px + 36 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+
+    &--variant-02 {
+    	letter-spacing: 0.2em;
+    	line-height: 1.2;
+    	font-weight: 500;
+    	font-size: 24px;
+
+    	@media screen and (max-width: 1530px) {
+    		font-size: calc(18px + 6 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+}

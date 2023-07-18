@@ -1,0 +1,56 @@
+.beauty-products-section {
+    padding-top: 180px;
+    padding-bottom: 380px;
+
+    @media screen and (max-width: 1530px) {
+    	padding-top: calc(100px + 80 * (100vw - 320px) / (1530 - 320));
+    	padding-bottom: calc(100px + 280 * (100vw - 320px) / (1530 - 320));
+    }
+
+    &__inner {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+
+    &__image-decoration {
+    	display: flex;
+
+    	@media screen and (max-width: 1024px) {
+    		display: none;
+    	}
+    }
+
+    &__image {
+    	padding-top: 132%;
+    	width: 760px;
+    	border-radius: 480px 0px 0px;
+
+    	@media screen and (max-width: 1530px) {
+    		width: calc(380px + 380 * (100vw - 1024px) / (1530 - 1024));
+    		border-top-left-radius: calc(240px + 240 * (100vw - 1024px) / (1530 - 1024));
+    	}
+    }
+
+    &__content {
+    	flex: 0 0 520px;
+    	margin-right: 130px;
+
+    	@media screen and (max-width: 1530px) {
+    		margin-right: calc(30px + 100 * (100vw - 1024px) / (1530 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		flex: 0 1 600px;
+    		margin-right: 0;
+    	}
+    }
+
+    &__section-content {
+    	margin-top: 35px;
+
+    	@media screen and (max-width: 1530px) {
+    		margin-top: calc(25px + 10 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+}

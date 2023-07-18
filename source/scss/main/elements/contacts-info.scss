@@ -1,0 +1,29 @@
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+
+    &__email {
+    	text-decoration: underline !important;
+    }
+
+    &__additionally {
+    	display: flex;
+    	align-items: flex-start;
+    	flex-direction: column;
+    	margin-top: 30px;
+
+    	@media screen and (max-width: 1530px) {
+    		margin-top: calc(15px + 15 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+
+    &__link {
+    	&:not(:last-child) {
+    		margin-bottom: 15px;
+
+    		@media screen and (max-width: 1530px) {
+    			margin-bottom: calc(10px + 5 * (100vw - 320px) / (1530 - 320));
+    		}
+    	}
+    }
+}

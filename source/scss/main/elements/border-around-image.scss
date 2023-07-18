@@ -1,0 +1,56 @@
+.border-around-image {
+    position: relative;
+
+    & > * {
+    	z-index: 2;
+    }
+
+    &::before {
+    	position: absolute;
+    	z-index: 1;
+    	border: 35px dashed rgba(var(--color-06));
+    	transition: border-width 0.2s;
+    	content: '';
+
+    	@media screen and (max-width: 1530px) {
+    		border-width: calc(20px + 15 * (100vw - 1024px) / (1530 - 1024));
+    	}
+    }
+
+    &--circle::before {
+    	top: -55px;
+    	right: -70px;
+    	bottom: 30px;
+    	left: -55px;
+    	border-radius: 50%;
+    }
+
+    &--right-oval::before {
+    	top: 110px;
+    	right: -130px;
+    	bottom: -95px;
+    	left: 140px;
+    	border-radius: 200px;
+
+    	@media screen and (max-width: 1530px) {
+    		top: calc(55px + 55 * (100vw - 1024px) / (1530 - 1024));
+    		right: calc(-65px - 65 * (100vw - 1024px) / (1530 - 1024));
+    		bottom: calc(-50px - 45 * (100vw - 1024px) / (1530 - 1024));
+    		left: calc(70px + 70 * (100vw - 1024px) / (1530 - 1024));
+    	}
+    }
+
+    &--left-oval::before {
+    	top: 0;
+    	right: 350px;
+    	bottom: 120px;
+    	left: -90px;
+    	border-radius: 200px;
+
+    	@media screen and (max-width: 1530px) {
+    		right: calc(150px + 200 * (100vw - 1024px) / (1530 - 1024));
+    		bottom: calc(60px + 60 * (100vw - 1024px) / (1530 - 1024));
+    		left: calc(-45px - 45 * (100vw - 1024px) / (1530 - 1024));
+    	}
+    }
+}

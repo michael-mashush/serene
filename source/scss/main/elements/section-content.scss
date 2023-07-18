@@ -1,0 +1,19 @@
+.section-content {
+    max-width: 510px;
+
+    &__text {
+    	margin-bottom: 35px;
+
+    	@media screen and (max-width: 1530px) {
+    		margin-bottom: calc(15px + 20 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+
+    &__button {
+    	margin-top: 35px;
+
+    	@media screen and (max-width: 1530px) {
+    		margin-top: calc(15px + 20 * (100vw - 320px) / (1530 - 320));
+    	}
+    }
+}
